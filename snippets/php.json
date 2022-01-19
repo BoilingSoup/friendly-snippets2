@@ -10,6 +10,118 @@
     ],
     "description": "Class definition"
   },
+  "strict types": {
+    "prefix": "dst",
+    "body": [
+      "declare(strict_types=1);"
+    ],
+    "description": "Declare strict types"
+  },
+  "h1": {
+    "prefix": "h1",
+    "body": [
+      "<h1>${1:text}</h1>"
+    ],
+    "description": "HTML h1 element"
+  },
+  "h2": {
+    "prefix": "h2",
+    "body": [
+      "<h2>${1:text}</h2>"
+    ],
+    "description": "HTML h2 element"
+  },
+  "h3": {
+    "prefix": "h3",
+    "body": [
+      "<h3>${1:text}</h3>"
+    ],
+    "description": "HTML h3 element"
+  },
+  "h4": {
+    "prefix": "h4",
+    "body": [
+      "<h4>${1:text}</h4>"
+    ],
+    "description": "HTML h4 element"
+  },
+  "h5": {
+    "prefix": "h5",
+    "body": [
+      "<h5>${1:text}</h5>"
+    ],
+    "description": "HTML h5 element"
+  },
+  "h6": {
+    "prefix": "h6",
+    "body": [
+      "<h6>${1:text}</h6>"
+    ],
+    "description": "HTML h6 element"
+  },
+  "input": {
+    "prefix": "input",
+    "body": [
+      "<input>${1:text}</input>"
+    ],
+    "description": "HTML input element"
+  },
+  "button": {
+    "prefix": "button",
+    "body": [
+      "<button>${1:text}</button>"
+    ],
+    "description": "HTML button element"
+  },
+  "form": {
+    "prefix": "form",
+    "body": [
+      "<form>${1:text}</form>"
+    ],
+    "description": "HTML form element"
+  },
+  "label": {
+    "prefix": "label",
+    "body": [
+      "<label>${1:text}</label>"
+    ],
+    "description": "HTML label element"
+  },
+  "div": {
+    "prefix": "div",
+    "body": [
+      "<div>${1:text}</div>"
+    ],
+    "description": "HTML div element"
+  },
+  "a": {
+    "prefix": "a",
+    "body": [
+      "<a href=${1:text}></a>"
+    ],
+    "description": "HTML anchor element"
+  },
+  "b": {
+    "prefix": "b",
+    "body": [
+      "<b>${1:text}</b>"
+    ],
+    "description": "HTML bold element"
+  },
+  "p": {
+    "prefix": "p",
+    "body": [
+      "<p>${1:text}</p>"
+    ],
+    "description": "HTML paragraph element"
+  },
+  "img": {
+    "prefix": "img",
+    "body": [
+      "<img src=${1:text}></img>"
+    ],
+    "description": "HTML img element"
+  },
   "PHPDoc class …": {
     "prefix": "doc_class",
     "body": [
@@ -61,7 +173,9 @@
   },
   "PHPDoc param …": {
     "prefix": "param",
-    "body": ["* @param ${1:Type} ${2:var} ${3:Description}$0"],
+    "body": [
+      "* @param ${1:Type} ${2:var} ${3:Description}$0"
+    ],
     "description": "Paramater documentation"
   },
   "function …": {
@@ -90,7 +204,10 @@
   },
   "define(…, …)": {
     "prefix": "def",
-    "body": ["define('$1', ${2:'$3'});", "$0"],
+    "body": [
+      "define('$1', ${2:'$3'});",
+      "$0"
+    ],
     "description": "Definition"
   },
   "do … while …": {
@@ -104,12 +221,20 @@
   },
   "while …": {
     "prefix": "while",
-    "body": ["while (${1:\\$${2:a} <= ${3:10}}) {", "\t${0:# code...}", "}"],
+    "body": [
+      "while (${1:\\$${2:a} <= ${3:10}}) {",
+      "\t${0:# code...}",
+      "}"
+    ],
     "description": "While-loop"
   },
   "if …": {
     "prefix": "if",
-    "body": ["if (${1:condition}) {", "\t${0:# code...}", "}"],
+    "body": [
+      "if (${1:condition}) {",
+      "\t${0:# code...}",
+      "}"
+    ],
     "description": "If block"
   },
   "if … else …": {
@@ -131,12 +256,20 @@
   },
   "else …": {
     "prefix": "else",
-    "body": ["else {", "\t${0:# code...}", "}"],
+    "body": [
+      "else {",
+      "\t${0:# code...}",
+      "}"
+    ],
     "description": "Else block"
   },
   "elseif …": {
     "prefix": "elseif",
-    "body": ["elseif (${1:condition}) {", "\t${0:# code...}", "}"],
+    "body": [
+      "elseif (${1:condition}) {",
+      "\t${0:# code...}",
+      "}"
+    ],
     "description": "Elseif block"
   },
   "for …": {
@@ -189,7 +322,11 @@
   },
   "case …": {
     "prefix": "case",
-    "body": ["case '${1:value}':", "\t${0:# code...}", "\tbreak;"],
+    "body": [
+      "case '${1:value}':",
+      "\t${0:# code...}",
+      "\tbreak;"
+    ],
     "description": "Case Block"
   },
   "$this->…": {
@@ -212,12 +349,16 @@
   },
   "Region Start": {
     "prefix": "#region",
-    "body": ["#region"],
+    "body": [
+      "#region"
+    ],
     "description": "Folding Region Start"
   },
   "Region End": {
     "prefix": "#endregion",
-    "body": ["#endregion"],
+    "body": [
+      "#endregion"
+    ],
     "description": "Folding Region End"
   },
   "Try Catch Block": {
