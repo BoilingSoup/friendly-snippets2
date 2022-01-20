@@ -115,6 +115,27 @@
     ],
     "description": "HTML paragraph element"
   },
+  "ol": {
+    "prefix": "ol",
+    "body": [
+      "<ol>${1:text}</ol>"
+    ],
+    "description": "HTML ol element"
+  },
+  "ul": {
+    "prefix": "ul",
+    "body": [
+      "<ul>${1:text}</ul>"
+    ],
+    "description": "HTML ul element"
+  },
+  "li": {
+    "prefix": "li",
+    "body": [
+      "<li>${1:text}</li>"
+    ],
+    "description": "HTML li element"
+  },
   "img": {
     "prefix": "img",
     "body": [
